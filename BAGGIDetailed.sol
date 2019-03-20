@@ -50,7 +50,7 @@ contract BAGGIDetailed is BAGGI {
     /**
      * Set the owner of the token.
      */
-    function setOwner(string newOwn) public onlyOwner returns (bool) {
+    function setOwner(address newOwn) public onlyOwner returns (bool) {
         owner = newOwn;
         return true;
     }
